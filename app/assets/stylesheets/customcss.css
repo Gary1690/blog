@@ -1,5 +1,40 @@
 @import 'bootstrap/dist/css/bootstrap';
 
 .navbar{
-  background-color: whitesmoke
+  background-color: black
+}
+
+.nav-link{
+  color:white
+}
+
+.navbar-brand{
+  color:white
+}
+
+.home-container{
+  margin-top: 3em;
+}
+
+.jumbotron {
+  /* background-image: asset-url('images/jumbo.jpg'); */
+  background-image: url(/assets/jumbo.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white; 
+  height: 35em;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: none;
 }
