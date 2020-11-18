@@ -1,9 +1,22 @@
 
-<h1>showing articles details</h1>
 
-<p> Title: <strong><%=@article.title%></strong></p>
-<p> Description: <strong><%=@article.description%></strong></p>
-<br/>
-<%= link_to  "Update", edit_article_path(@article) %> |
-<%= link_to  "Delete", article_path(@article),method: :delete, data: {confirm: "Are you sure?"}  %> |
-<%= link_to  "Return to article index", articles_path()  %>
+
+<h5 class="text-center m-3"><%=@article.title%></h5>
+<div class="container">
+ <div class="row justify-content-md-center">
+      <div class="col-6">
+        <div class="card m-3 shadow text-center">
+          <div class="card-body">
+            <p class="card-text"><%=@article.description%></p>
+
+            <%= link_to  "Edit", edit_article_path(@article),class:"btn btn-outline-success m-1" %>
+            <%= link_to  "Delete", article_path(@article),method: "delete",class:"btn btn-outline-danger m-1", data: {confirm: "Are you sure?"} %>
+
+          </div>
+          <div class="card-footer">
+            <small>Created <%=time_ago_in_words(@article.created_at)%>, Updated <%=time_ago_in_words(@article.updated_at)%>  </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
