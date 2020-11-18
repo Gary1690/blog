@@ -1,12 +1,12 @@
 <h1 class="text-center mt-4">Listing all articles</h1>
-<div  class="row justify-content-md-center">
+<div  class="row justify-content-center">
   <div class="col-6">
     <%= link_to  "New Article", new_article_path(), class:"btn btn-primary m-3" %>
   </div>
 </div>
 <% if @articles.any? %>
   <% @articles.each do |article|%>
-    <div class="row justify-content-md-center">
+    <div class="row justify-content-center">
       <div class="col-6">
         <div class="card m-3 shadow text-center">
           <div class="card-header font-italic">
