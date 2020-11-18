@@ -1,4 +1,4 @@
-@import 'bootstrap/dist/css/bootstrap';
+
 
 .navbar{
   background-color: black
@@ -16,7 +16,7 @@
   margin-top: 3em;
 }
 
-.jumbotron {
+.jumbotron-custom {
   /* background-image: asset-url('images/jumbo.jpg'); */
   background-image: url(/assets/jumbo.jpg);
   background-position: center center;
