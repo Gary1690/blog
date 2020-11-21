@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   get '/about', to: 'homes#about'
   # root :to => redirect('/articles')
   resources :articles
-
+  get 'signup', to: 'users#new'
+  resource :users, only: [:create]
 end
