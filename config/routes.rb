@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   # root :to => redirect('/articles')
   resources :articles
   get 'signup', to: 'users#new'
-  resources :users, only: [:create,:update,:edit,:show]
+  resources :users, only: [:create,:update,:edit,:show,:index]
 end
