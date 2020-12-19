@@ -1,6 +1,12 @@
 
+<h1 class="text-center mt-4">Bloggers</h1>
+<div class="apple_pagination mb-4">
+  <%= will_paginate @users, :container => false %>
+</div>
+
+
 <div class="container">
-  <h1 class="text-center mt-4">Bloggers</h1>
+ 
   <%if @users.any?%>
     <%@users.each  do |user|%>
       <div class="card text-center m-5">
@@ -27,3 +33,4 @@
     </div>
   <%end%>
 </div>
+
