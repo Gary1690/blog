@@ -5,5 +5,9 @@ Rails.application.routes.draw do
   # root :to => redirect('/articles')
   resources :articles
   get 'signup', to: 'users#new'
+  get 'login', to: 'session#new'
+  post 'login', to: 'session#create'
+  get 'logout', to: 'session#destroy'
+
   resources :users, only: [:create,:update,:edit,:show,:index]
 end
