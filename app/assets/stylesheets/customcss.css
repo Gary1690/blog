@@ -17,6 +17,7 @@
 }
 
 .jumbotron-custom {
+  background-image: asset-url('images/jumbo.jpg'); 
   background-image: url(/assets/jumbo.jpg);
   background-position: center center;
   background-repeat: no-repeat;
