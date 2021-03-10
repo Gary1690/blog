@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Let's Blog 
 
-Things you may want to cover:
+**Inspitation behind the APP
+Let's blog is a blogging website that surge as a mean to share information. This app is inspire under two premises that knowledge should be free and accesible regardless of one's background, social status, race, age, religion, etc... and that everyone should be heard. Making platform like this a mean for sharing information and expressing yourself and also coding practice
 
-* Ruby version
 
-* System dependencies
+**Description
+A ruby on rails blogging application that allows users to signup, manage their profile, create and manage their blogs and read other users blogs.
+ 
+ **Requires
+ Ruby --version '2.6.1'
+ Rails --version '6.0.3'
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+ 
